@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Energy Technician Portfolio</title>
+    <meta name="description" content="Professional portfolio of a Solar Energy Technician specializing in installation, maintenance, R&D, and renewable energy systems">
+    <meta name="keywords" content="solar energy, PV systems, renewable energy, solar installation, solar technician, photovoltaic">
+    <meta property="og:title" content="Solar Energy Technician Portfolio">
+    <meta property="og:description" content="Professional portfolio showcasing solar installation, maintenance, and R&D expertise">
+    <meta name="twitter:title" content="Solar Energy Technician Portfolio">
+    <meta name="twitter:description" content="Professional portfolio showcasing solar installation, maintenance, and R&D expertise">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #FFB703;
+            --secondary-color: #0057B8;
+            --dark-gray: #1a1a1a;
+            --light-gray: #f5f5f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text-primary);
+        }
+        
+        h1, h2, h3, h4 {
+            font-weight: 700;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+            background-color: var(--primary-color);
+            color: var(--dark-gray);
+        }
+        
+        .btn-primary:hover {
+            @apply shadow-lg transform -translate-y-0.5;
+        }
+        
+        .btn-secondary {
+            @apply px-6 py-3 rounded-lg font-medium border-2 transition-all duration-300;
+            border-color: var(--secondary-color);
+            color: var(--secondary-color);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--secondary-color);
+            @apply text-white;
+        }
+        
+        .section-padding {
+            @apply py-20 px-6;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
